@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require('express')
 const creds = require('./creds')
 const Blog = require('./models/blog')
 const mongoose = require('mongoose')
@@ -63,3 +63,6 @@ app.post('/blog/create', (req, res, next) => {
     res.redirect('/blog')
     next()
 })
+
+const practiceRouter = require('./routes/practice')
+app.use('/practice', practiceRouter)
