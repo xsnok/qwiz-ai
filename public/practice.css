@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color: #393E46;
+    --accent-bg-color: #222831;
+    --main-txt-color: #DFD0B8;
+    --accent-txt-color: #948979;
+}
+
+* {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+#practice-title {
+    display: flex;
+    font-weight: bold;
+    padding: .5rem;
+    font-size: 2rem;
+    justify-content: center;
+    background-color: var(--accent-bg-color);
+}
+
+#selection-grid {
+    display: grid;
+    justify-content: center;
+}
+
+#default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--accent-bg-color);
+    color: red;
+}
+
+.selection-item-img {
+    height: 5rem;
+}
+
