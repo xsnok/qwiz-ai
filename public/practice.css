@@ -22,17 +22,41 @@
 #selection-grid {
     display: grid;
     justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }
 
-#default {
+.item-link-container {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.selection-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: var(--accent-bg-color);
-    color: red;
+    color: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.selection-item > * {
+    background-color: var(--accent-bg-color);
 }
 
 .selection-item-img {
     height: 5rem;
 }
 
+.selection-item-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.selection-item-description {
+    color: var(--accent-txt-color);
+}
