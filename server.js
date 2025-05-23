@@ -12,11 +12,6 @@ mongoose.connect(creds.mongoAPI)
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))
 
-app.use((req, res, next) => {
-    console.log('this is middle-ware')
-    next()
-})
-
 app.get('/', (req,res) => {
     res.setHeader('Content-Type', 'text/html')
     const title = "blud"
